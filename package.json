@@ -1,7 +1,7 @@
 {
   "name": "hubot-uncontext",
   "description": "A hubot script that does the things",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "robksawyer <robksawyer@gmail.com>",
   "license": "MIT",
   "keywords": [
