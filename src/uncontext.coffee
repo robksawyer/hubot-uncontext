@@ -1,22 +1,24 @@
 # Description
-#   A hubot script that does the things
+#   A hubot script that takes advantage of uncontext (http://uncontext.com) random streams.
 #
 # Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+#   websocket
 #
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
+#   random - Sends back a random stream of numbers.
 #
 # Notes:
-#   <optional notes required for the script>
+#   This module uses web sockets.
 #
 # Author:
 #   robksawyer[@<org>]
 
-module.exports = (robot) ->
-  robot.respond /hello/, (msg) ->
-    msg.reply "hello!"
+WebSocketClient = require('websocket').client
+client = new WebSocketClient()
 
-  robot.hear /orly/, ->
-    msg.send "yarly"
+module.exports = (robot) ->
+
+  robot.hear /random/, ->
+    socket = client.connect 'ws://duel.uncontext.com:80'
+    socket.on 'connect', (data) ->
+      msg.send data

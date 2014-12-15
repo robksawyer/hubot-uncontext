@@ -4,22 +4,22 @@
   "version": "0.0.0",
   "author": "robksawyer <robksawyer@gmail.com>",
   "license": "MIT",
-
-  "keywords": ["uncontext","random","randomness"],
-
+  "keywords": [
+    "uncontext",
+    "random",
+    "randomness"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/hubot-scripts/hubot-uncontext.git"
   },
-
   "bugs": {
     "url": "https://github.com/hubot-scripts/hubot-uncontext/issues"
   },
-
   "dependencies": {
-    "coffee-script": "~1.6"
+    "coffee-script": "~1.6",
+    "websocket": "^1.0.14"
   },
-
   "devDependencies": {
     "mocha": "*",
     "chai": "*",
@@ -30,9 +30,7 @@
     "matchdep": "~0.1.2",
     "grunt-contrib-watch": "~0.5.3"
   },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "grunt test"
   }
