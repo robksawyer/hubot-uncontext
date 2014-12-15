@@ -1,7 +1,7 @@
 {
   "name": "hubot-uncontext",
   "description": "A hubot script that takes advantage of uncontext (http://uncontext.com) random streams.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "robksawyer <robksawyer@gmail.com>",
   "license": "MIT",
   "keywords": [
