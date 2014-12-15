@@ -1,6 +1,6 @@
 {
   "name": "hubot-uncontext",
-  "description": "A hubot script that does the things",
+  "description": "A hubot script that takes advantage of uncontext (http://uncontext.com) random streams.",
   "version": "0.0.2",
   "author": "robksawyer <robksawyer@gmail.com>",
   "license": "MIT",
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-uncontext.git"
+    "url": "git://github.com/robksawyer/hubot-uncontext.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-uncontext/issues"
+    "url": "https://github.com/robksawyer/hubot-uncontext/issues"
   },
   "dependencies": {
     "coffee-script": "~1.6",
